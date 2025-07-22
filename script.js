@@ -69,7 +69,7 @@ function createTaskItem(task) {
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   checkbox.checked = completedTasks[task] || false;
-  checkbox.id = task-${task};
+  checkbox.id = `task-${task}`;
 
   const label = document.createElement("label");
   label.htmlFor = task-${task};
